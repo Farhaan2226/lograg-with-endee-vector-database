@@ -172,5 +172,39 @@ System returns semantic results only
 
 Explains degradation reason
 
+🛡️ Security Considerations
+
+Logs and user input are treated as untrusted data
+
+Prompt-injection patterns are sanitized
+
+LLM instructions cannot be overridden by logs
+
+No external API calls required (local-first design)
+
+Ideal Use Cases
+
+DevOps troubleshooting
+
+SRE incident response
+
+Log exploration during outages
+
+Interview/demo projects
+
+Local AI experimentation
+
+🧠 Summary
+
+LogRAG combines semantic search, local LLMs, and resilient system design to create a powerful log analysis tool that prioritizes privacy, reliability, and explainability.
+
+This project demonstrates real-world application of:
+
+Retrieval-Augmented Generation
+
+Failure-aware system design
+
+Practical ML + backend integration
+
 
 
