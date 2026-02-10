@@ -39,7 +39,9 @@ Natural-language explanations of failures
 🏗️ System Architecture (High Level)
 User (Streamlit UI) --> Semantic Search (Sentence Transformers) --> Top-K Relevant Logs --> Structured Explanation / RAG results + reason (Ollama (Local LLM))
 
+
 🧱 Technology Stack & Responsibilities
+
 🎨 Frontend
 
 Streamlit
@@ -205,6 +207,7 @@ Retrieval-Augmented Generation
 Failure-aware system design
 
 Practical ML + backend integration
+
 
 
 
