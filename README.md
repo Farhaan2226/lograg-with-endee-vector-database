@@ -36,7 +36,9 @@ Cross-service correlation
 
 Natural-language explanations of failures
 
-🏗️ System Architecture (High Level)
+
+🏗️ System Architecture 
+
 User (Streamlit UI) --> Semantic Search (Sentence Transformers) --> Top-K Relevant Logs --> Structured Explanation / RAG results + reason (Ollama (Local LLM))
 
 
@@ -58,6 +60,7 @@ Similar historical logs
 
 Fallback indicators
 
+
 ⚙️ Backend API
 
 FastAPI
@@ -78,6 +81,7 @@ Graceful LLM fallback
 
 Secure prompt construction
 
+
 🧠 Embedding Layer
 
 SentenceTransformers
@@ -87,6 +91,7 @@ Model: all-MiniLM-L6-v2
 Converts logs into dense semantic vectors
 
 Enables similarity search beyond keywords
+
 
 📐 Vector Similarity
 
@@ -100,6 +105,7 @@ Stored log vectors
 
 Retrieves Top-K relevant logs
 
+
 🤖 LLM Engine
 
 Ollama
@@ -111,6 +117,7 @@ No cloud dependency
 Ensures privacy & compliance
 
 Used only after retrieval (RAG pattern)
+
 
 🧪 Log Corpus
 
@@ -136,6 +143,7 @@ Syslog
 
 Web server logs
 
+
 🐳 Containerization
 
 Docker & Docker Compose
@@ -149,6 +157,7 @@ UI
 Enables reproducible deployment
 
 Simplifies local testing
+
 
 🔄 Retrieval-Augmented Generation (RAG) Flow
 
@@ -174,6 +183,7 @@ System returns semantic results only
 
 Explains degradation reason
 
+
 🛡️ Security Considerations
 
 Logs and user input are treated as untrusted data
@@ -196,6 +206,7 @@ Interview/demo projects
 
 Local AI experimentation
 
+
 🧠 Summary
 
 LogRAG combines semantic search, local LLMs, and resilient system design to create a powerful log analysis tool that prioritizes privacy, reliability, and explainability.
@@ -207,6 +218,7 @@ Retrieval-Augmented Generation
 Failure-aware system design
 
 Practical ML + backend integration
+
 
 
 
