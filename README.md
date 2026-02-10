@@ -17,3 +17,41 @@ The system is designed to remain partially functional even when the LLM backend 
 🐳 Dockerized backend for reproducibility
 
 🧪 Synthetic + real log ingestion support
+
+What Problem Does LogRAG Solve?
+
+Traditional log search relies on:
+
+Exact keyword matches
+
+Manual inspection
+
+Fragmented context across services
+
+LogRAG enables:
+
+Meaning-based log retrieval
+
+Cross-service correlation
+
+Natural-language explanations of failures
+
+
+🏗️ System Architecture (High Level)
+User (Streamlit UI)
+        │
+        ▼
+Semantic Search (Sentence Transformers)
+        │
+        ▼
+Top-K Relevant Logs
+        │
+        ├──▶ LLM Available? ──▶ Yes ──▶ Ollama (Local LLM)
+        │                      │
+        │                      ▼
+        │              Structured Explanation
+        │
+        └──▶ No ──▶ Return RAG results + reason
+
+Faster root-cause analysis
+
