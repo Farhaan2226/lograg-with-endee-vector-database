@@ -1,0 +1,9 @@
+2026-01-30 14:22:01 ERROR auth-service Container exited with code 137
+OOMKilled: true
+
+2026-01-30 14:25:11 ERROR auth-service NullPointerException in AuthService.login
+java.lang.NullPointerException
+  at AuthService.login(AuthService.java:42)
+  at Controller.handle(Controller.java:18)
+
+2026-01-30 14:30:45 WARN payment-service Timeout while calling payment gateway
