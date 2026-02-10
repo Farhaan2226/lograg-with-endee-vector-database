@@ -37,21 +37,6 @@ Cross-service correlation
 Natural-language explanations of failures
 
 
-🏗️ System Architecture (High Level)
-User (Streamlit UI)
-        │
-        ▼
-Semantic Search (Sentence Transformers)
-        │
-        ▼
-Top-K Relevant Logs
-        │
-        ├──▶ LLM Available? ──▶ Yes ──▶ Ollama (Local LLM)
-        │                      │
-        │                      ▼
-        │              Structured Explanation
-        │
-        └──▶ No ──▶ Return RAG results + reason
+User (Streamlit UI) --> Semantic Search (Sentence Transformers) --> Top-K Relevant Logs --> Structured Explanation / RAG results + reason (Ollama (Local LLM))
 
-Faster root-cause analysis
 
