@@ -4,6 +4,12 @@ The system leverages the Endee vector database for efficient storage and retriev
 
 The system is designed to remain partially functional even when the LLM backend is unavailable, making it resilient and production-aware.
 
+
+
+
+
+
+
 🚀 Key Features
 
 
@@ -20,6 +26,12 @@ The system is designed to remain partially functional even when the LLM backend 
 
 
 🧩 Graceful degradation when the LLM is unavailable (retrieval still works)
+
+
+
+
+
+
 
 
 📊 Streamlit UI for interactive analysis
