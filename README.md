@@ -1,16 +1,26 @@
 LogRAG is a local, secure Retrieval-Augmented Generation (RAG) system that helps engineers understand, diagnose, and resolve production issues by analyzing historical logs and generating structured explanations using a local Large Language Model (LLM).
 
+The system leverages the Endee vector database for efficient storage and retrieval of log embeddings, enabling fast semantic search across large volumes of historical logs. By combining Endee’s high-performance vector indexing with local LLM reasoning, LogRAG delivers accurate and context-aware incident analysis while maintaining data privacy.
+
 The system is designed to remain partially functional even when the LLM backend is unavailable, making it resilient and production-aware.
 
 🚀 Key Features
 
-🔍 Semantic Log Search using vector embeddings
 
-🧠 LLM-powered log explanation (local, private)
+🔍 Semantic Log Search using vector embeddings stored in Endee vector database
+
+
+🗄️ High-performance vector indexing powered by Endee for scalable retrieval
+
+
+🧠 LLM-powered log explanation (local, private via Ollama)
+
 
 🛡️ Prompt-injection resistant by design
 
-🧩 Graceful degradation when LLM is unavailable
+
+🧩 Graceful degradation when the LLM is unavailable (retrieval still works)
+
 
 📊 Streamlit UI for interactive analysis
 
